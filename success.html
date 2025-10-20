@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交成功 - 访客系统</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: #27ae60;
+            margin-bottom: 20px;
+        }
+        
+        .qrcode-container {
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        
+        .qrcode-image {
+            max-width: 250px;
+            height: auto;
+        }
+        
+        .action-buttons {
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            <h1>提交成功！</h1>
+            <p>您的访客信息已成功登记</p>
+            
+            <div class="qrcode-container">
+                <h3>访客二维码</h3>
+                <!-- 替换为你的实际二维码图片 -->
+                <img src="qrcode.png" alt="访客二维码" class="qrcode-image">
+                <p>请出示此二维码以便核验</p>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="index.html" class="btn">登记新访客</a>
+                <button onclick="viewRecords()" class="btn btn-secondary">查看记录</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function viewRecords() {
+            alert('此功能可扩展为查看本地存储的访客记录');
+            // 未来可在此实现查看本地存储记录的功能
+        }
+    </script>
+</body>
+</html>
